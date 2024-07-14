@@ -1,0 +1,216 @@
+#header{
+  width: 100%; /* Garante que a section ocupe toda a largura disponível */
+  height: 20vh; /* Opção para garantir que a section ocupe toda a altura disponível, se desejado */
+  padding: 0; /* Remove qualquer padding que possa estar sendo aplicado */
+  margin: 0; /* Remove qualquer margin que possa estar sendo aplicada */
+  position: fixed;
+  z-index: 99;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between; /* Alinha os itens com espaçamento entre eles */
+  align-items: center; /* Centraliza os itens verticalmente */
+  background-color: #252627; /* Cor de fundo preta */
+  height: 160px; /* Altura fixa de 120px */
+  background-size: cover; /* Assegura que a imagem cubra completamente o espaço */
+  background-position: center; /* Centraliza a imagem no fundo */
+  overflow: auto;
+  width: 100%;
+  
+  
+  
+}
+
+.header-content a {
+  padding: 60px;
+  color: #FAFFEB; /* Cor do texto branca */
+  text-decoration: none;
+  font-size: 16px;
+  font-family: 'Roboto Bold', sans-serif;
+  transition: color 0.3s; /* Transição suave para mudança de cor */
+}
+
+.header-content a:hover {
+  color: #01DAC5; /* Muda a cor para verde no hover */
+}
+
+.header-content li.active a {
+  color: #F1185C; /* Cor vermelha para o item ativo */
+}
+
+.header-content li.active a:hover {
+  color: #F1185C; /* Mantém a cor vermelha mesmo no hover */
+}
+
+
+/* Estilos principais para o botão */
+.button-contact {
+  margin-left: 40px;
+  padding-right: 80px;
+  
+}
+
+.header-content .button-contact a {
+  color: ivory; /* Define a cor do texto para marfim */
+  font-size: 16px;
+  font-family: 'Roboto Bold', sans-serif;
+  background-color: #F46A2A; /* Orange (Crayola) mais escuro */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; /* Transição suave para mudança de cor */
+  padding: 10px 20px; /* Ajusta o padding para melhor ergonomia */
+  
+}
+
+.header-content .button-contact a:hover {
+  background-color: #FFAA01; /* Orange (web) mais amarelado */
+  color: #FAFFEB;
+}
+
+
+
+.header-content img{
+  padding-left: 70px;
+  overflow: hidden;
+  height: auto;
+  width: 290px;
+  padding: 0;
+  margin-left: 30px;
+  transition: transform 0.5s ease-out; /* Adiciona transição suave a todas as propriedades alteráveis */
+  transform: translateX(0%); /* Começa na posição original */
+}
+
+.header-content a {
+  padding: 60px;
+  color: #FAFFEB; /* Cor do texto branca */
+  text-decoration: none; /* Remove o sublinhado do link */
+  font-size: 16px;
+  font-family: 'Roboto Bold', sans-serif;
+}
+
+
+.header-content a:hover {
+  color: #01DAC5; /* Muda a cor para vermelho no hover */
+  cursor: pointer; /* Muda o cursor para o tipo pointer */
+}
+
+.header-content ul {
+  right: 200px;
+  display: flex; /* Faz com que os itens da lista fiquem em linha */
+  list-style-type: none; /* Remove os marcadores dos itens da lista */
+  padding: 0; /* Remove o padding padrão */
+  margin: 0; /* Remove a margem padrão */
+  width: 100%; /* Ocupa toda a largura do container */
+  align-items: center;
+  justify-content: space-around;
+  
+}
+
+.menu-icon {
+  display: none; /* Esconde o ícone por padrão */
+  font-size: 28px;
+  cursor: pointer;
+  z-index: 1000; 
+}
+
+@media screen and (max-width: 1140px) {
+  .menu-icon {
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 50px;
+    filter: invert(97%) sepia(4%) saturate(1258%) hue-rotate(80deg) brightness(116%) contrast(100%);
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 110vh;
+    position: absolute;
+    top: 0;
+    left: -100%; /* Esconde o menu fora da tela */
+    transition: all 0.3s ease;
+    background-color: #252627; /* Fundo escuro para o menu */
+    align-items: center;
+    justify-content: center;
+    outline: none;
+  }
+
+  .nav-menu.active {
+    left: 0; /* Move o menu para dentro da tela */
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    z-index: 899;
+  }
+
+  .nav-menu li{
+    width: 100%; /* Faz cada item ocupar a largura total */
+    margin-bottom: 10px; /* Adiciona uma margem na parte inferior de cada item */
+  }
+
+  .nav-menu .button-contact {
+    display: flex;  /* Torna .button-contact um container flex */
+    overflow: hidden;   /* Garante que ocupe toda a largura disponível */
+    justify-content: center;  /* Centraliza o conteúdo horizontalmente */
+    align-items: center;      /* Centraliza o conteúdo verticalmente */
+    padding-left: 35px;
+  }
+
+  .nav-menu a,
+  .nav-menu .button-contact a {
+    display: block;
+    width: 100%; /* Faz o link preencher o LI */
+    padding: 15px; /* Aumenta o padding para facilitar o toque */
+    text-align: center; /* Centraliza o texto do link */
+    color: #FAFFEB; /* Define a cor do texto */
+    background-color: 0.0.0.1; /* Fundo mais escuro para cada link */
+    border-radius: 5px; /* Bordas arredondadas para estética */
+    transition: background-color 0.3s ease; /* Transição suave do fundo */
+    text-decoration: none; /* Remove sublinhado */
+  }
+
+  .nav-menu a:hover,
+  .nav-menu .button-contact a:hover {
+    /* Muda a cor de fundo ao passar o mouse */
+    
+    text-decoration: none; /* Garante que o hover não aplique sublinhado */
+  }
+
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-content img {
+    height: auto; /* Mantém a proporção da altura baseada na largura */
+    max-width: 100%; /* Limita a largura máxima para não ultrapassar o container */
+    margin: 0; /* Remove margens adicionais */
+    margin-left: 30px;
+    padding-top: 2%;
+    z-index: 998;
+    transform: translateX(-50%);
+  }
+
+  .header-content a {
+    padding: 15px; /* Reduz o padding nos links */
+    text-decoration: none; /* Remove qualquer sublinhado dos links dentro do header-content */
+  }
+
+  .header-content a:hover {
+    color: #01DAC5; /* Muda a cor para verde no hover */
+  }
+  
+  .header-content li.active a {
+    color: #F1185C; /* Cor vermelha para o item ativo */
+  }
+  
+  .header-content li.active a:hover {
+    color: #F1185C; /* Mantém a cor vermelha mesmo no hover */
+  }
+}

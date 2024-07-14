@@ -1,0 +1,166 @@
+/* Estilizações para Ourteam.css */
+
+
+
+
+#ourteam {
+    width: 100%; /* Garante que a section ocupe toda a largura disponível */
+    height: 120vh; /* Opção para garantir que a section ocupe toda a altura disponível, se desejado */
+    padding: 0; /* Remove qualquer padding que possa estar sendo aplicado */
+    margin: 0; /* Remove qualquer margin que possa estar sendo aplicada */
+    position: static;
+    display: flex;
+    justify-content: center;
+    background-color: #FAFFEB;
+}
+
+.container-team {
+    width: 100%;
+    height: 110vh;
+    background-color: #FAFFEB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    
+    
+}
+
+.text-team {
+    
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Organiza os elementos em coluna */
+    align-items: center; /* Centraliza os elementos horizontalmente */
+    justify-content: center; /* Centraliza os elementos verticalmente */
+    max-width: 60%; /* Limita a largura máxima para 60% do seu container pai */
+    margin: 20 0 0; /* Centraliza a div .text-team horizontalmente no container-team */
+    padding: 40px; /* Espaçamento interno para não colar nos bordas */
+}
+
+.text-team h4 {
+    
+    font-size: 60px;
+    color: #670FB9;
+    margin: 0; /* Remove a margem superior e inferior */
+    padding: 20px 0; /* Espaço superior e inferior para separar do parágrafo */
+    font-family: 'Century Gothic Bold';
+    
+}
+
+.text-team p {
+    font-size: 16px;
+    color: #252627;
+    text-align: center;
+    margin: 20px 0; /* Adiciona margem superior e inferior */
+    line-height: 1.8em;
+    font-family: 'Roboto Bold';
+    
+}
+
+
+
+
+/* Estilo geral do carrossel */
+
+
+
+.carousel-team div {
+    width: 500px; /* Largura de cada bloco do carrossel */
+    background-color: #FAFFEB; /* Fundo claro para melhor visualização */
+    display: flex; /* Flex para melhor alinhamento interno */
+    height: auto; /* Altura automática para o conteúdo */
+    box-sizing: border-box;
+    position: relative;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center;
+    
+}
+
+.carousel-team h10{
+    color: rgb(241 24 92);
+    
+    font-family: 'Century Gothic Bold';
+    font-size: 30px;
+    font-style: bold;
+    text-align: center;
+    width: auto;
+    display: block;
+    
+}
+
+.carousel-team h9{
+    
+    justify-content: center;
+    overflow: hidden;
+    font-family: 'Roboto Bold', sans-serif;
+    color: #ff7e00;
+    text-align: center;
+    width: 100%;
+    margin: 10px 0; 
+    display: block;
+}
+
+
+.carousel-team img {
+    width: 30%; /* Imagem ajustada à largura do bloco */
+    height: auto;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: 35%;
+    
+}
+
+.slick-prev, .slick-next {
+    z-index: 4;
+    width: 50px;
+    height: 50px;
+    background-color: #252627; /* Cor de fundo das setas */
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; /* Muda o cursor para indicar que é um elemento clicável */
+    transition: background-color 0.3s, transform 0.3s; /* Suaviza a transição de hover */
+    color: white; /* Define a cor do ícone/texto */
+}
+
+.slick-prev:hover, .slick-next:hover,
+.slick-prev:focus, .slick-next:focus,
+.slick-prev:active, .slick-next:active {
+    background-color: #252627; /* Escurece o fundo um pouco ao passar o mouse */
+    color: white; /* Garante que a cor do ícone/texto permaneça branca */
+    outline: none; /* Remove qualquer borda de foco que o navegador possa aplicar */
+}
+
+.slick-track {
+    
+    display: flex;   /* Mantém flex para melhor alinhamento dos slides */
+    /* Assegura que os slides estejam verticalmente alinhados */
+    width: 100%;    /* Tenta usar 100% para garantir que a pista tenha largura adequada */
+    height: auto;
+    
+}
+
+
+
+
+
+
+.carousel-team p{
+    
+    text-align: center;
+    height: auto;
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Roboto Bold';
+    
+}
+
+@media screen and (max-width: 1140px){
+    .carousel-team{
+        margin-bottom: 30px;
+    }
+
+}

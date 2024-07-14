@@ -1,0 +1,47 @@
+#rodape {
+    width: 100%;
+    background-color: #252627;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    position: relative;
+    display: block;
+    
+}
+
+.rodape-content {
+    width: 100%;
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    
+   
+}
+
+.rodape-content h5 {
+    color: #FAFFEB;
+    font-family: 'Roboto Bold';
+    font-size: 14px;
+}
+
+.icons-media a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.icons-media img {
+    filter: invert(97%) sepia(4%) saturate(1258%) hue-rotate(80deg) brightness(116%) contrast(100%);
+    height: 20px; /* Ajuste o tamanho conforme necessário */
+    transition: transform 0.3s;
+    padding: auto;
+
+    
+}
+
+
+.icons-media img:hover {
+    transform: scale(1.1); /* Efeito de hover para aumentar o ícone */
+}
