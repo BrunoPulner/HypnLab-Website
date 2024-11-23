@@ -1,14 +1,14 @@
 #about {
-    width: 100%; /* Garante que a section ocupe toda a largura disponível */
-    height: 100%; /* Opção para garantir que a section ocupe toda a altura disponível, se desejado */
-    padding: 0; /* Remove qualquer padding que possa estar sendo aplicado */
-    margin: 0; /* Remove qualquer margin que possa estar sendo aplicada */
-    position: static;
-    display: flex;
-    justify-content: center;
-    justify-content: center;
-    flex-direction: column;
-  }
+  width: 100%; /* Garante que a section ocupe toda a largura disponível */
+  height: 100%; /* Opção para garantir que a section ocupe toda a altura disponível, se desejado */
+  padding: 0; /* Remove qualquer padding que possa estar sendo aplicado */
+  margin: 0; /* Remove qualquer margin que possa estar sendo aplicada */
+  position: static;
+  display: flex;
+  justify-content: center;
+  justify-content: center;
+  flex-direction: column;
+}
 
 /* Estilos para o container geral */
 .container-about {
@@ -20,147 +20,188 @@
   flex-direction: column; /* Organiza os filhos em coluna */
   justify-content: center; /* Centraliza os filhos verticalmente */
   align-items: center; /* Centraliza os filhos horizontalmente */
- 
-  
-  }
-
-  .about-text {
-    display: block;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    text-align: center; /* Garante que o texto também esteja centralizado */
-  }
-  
-  /* Estilos para o título h2 */
-  .about-text h2 {
-    letter-spacing: 0.02em;
-    color: #01DAC5; /* Cor do título em dourado */
-    font-size: 60px; /* Aumenta o tamanho da fonte do título */
-    font-weight: 60px; /* Deixa o texto do título em negrito */
-    text-align: center; /* Centraliza o título */
-    margin: 0;
-    padding-top: 100px;
-    font-family: 'Century Gothic Bold';
-    font-weight: bold; /* Deixa o texto do título em negrito */
-  }
-  
-  /* Estilos para os parágrafos p dentro do texto sobre */
-  .about-text p {
-    color: #FAFFEB; /* Define a cor do texto dos parágrafos para branco */
-    font-size: 16px;
-    width:  60%;
-    letter-spacing: 0.05em;
-    margin: 0;
-    line-height: 1.8em; 
-    padding-top: 20px;
-    font-family: 'Roboto Bold', sans-serif;
-    padding-bottom: 60px;
-    margin-left: 20%;
-    text-align: center;
-  }
-  
-  .about-img {
-    display: flex;
-    flex-direction: row; /* Organização horizontal em telas grandes */
-    flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte conforme necessário */
-    background-image: url('../../img/Site/fundo.png');
-    background-size: cover;
-    background-position: center;
-    height: auto; /* Ajusta a altura baseada no conteúdo */
-    color: #FAFFEB;
-    font-family: 'Roboto Bold', sans-serif;
-    width: 100%;
-    justify-content: space-around; /* Espaçamento igual entre elementos */
 }
 
-.vision, .mission, .values, .goals {
+.about-text {
+  display: block;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  text-align: center; /* Garante que o texto também esteja centralizado */
+}
+
+/* Estilos para o título h2 */
+.about-text h4 {
+  letter-spacing: 0.02em;
+  color: #01dac5; /* Cor do título em dourado */
+  font-size: 60px; /* Aumenta o tamanho da fonte do título */
+  font-weight: 60px; /* Deixa o texto do título em negrito */
+  text-align: center; /* Centraliza o título */
+  margin: 0;
+  padding-top: 100px;
+  font-family: "Century Gothic Bold";
+  font-weight: bold; /* Deixa o texto do título em negrito */
+}
+
+.about-text h5 {
+  color: #ffffff;
+  font-size: 60px;
+  margin: 0;
+}
+
+/* Estilos para os parágrafos p dentro do texto sobre */
+.about-text p {
+  color: #faffeb; /* Define a cor do texto dos parágrafos para branco */
+  font-size: 16px;
+  width: 60%;
+  letter-spacing: 0.05em;
+  margin: 0;
+  line-height: 1.8em;
+  padding-top: 20px;
+  font-family: "Roboto Bold", sans-serif;
+  padding-bottom: 60px;
+  margin-left: 20%;
+  text-align: center;
+}
+
+.about-img {
+  display: flex;
+  flex-direction: row; /* Organização horizontal em telas grandes */
+  flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte conforme necessário */
+  background-image: url("../../img/Site/fundo.png");
+  background-size: cover;
+  background-position: center;
+  height: auto; /* Ajusta a altura baseada no conteúdo */
+  color: #faffeb;
+  font-family: "Roboto Bold", sans-serif;
+  width: 100%;
+  justify-content: space-around; /* Espaçamento igual entre elementos */
+}
+
+.vision,
+.mission,
+.values,
+.goals {
   width: 45%; /* Tamanho padrão para telas grandes */
   padding: 20px;
   margin: 10px;
-  background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+  background-color: #252627b2; /* Fundo semi-transparente */
   border-radius: 10px;
 }
 
-  
-  .text-img-about {
-    display: flex;
-    justify-content: space-between; /* Separa os filhos um para cada lado */
-    padding: 80px;
-    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para legibilidade */
-    border-radius: 10px;
-    align-items: center; /* Centraliza os itens verticalmente */
-    max-width: 60%;
-  }
-  
-  .text-img-one{
-    padding: 10px; /* Padding para não deixar o texto colado */
-    margin: 0 10px; /* Margem entre os textos */
-    text-align: center;
-    width: 50%;
-  }
-
-  .text-img-one p {
-    background-color: #252627;
-    color: #FAFFEB; 
-    display: inline-block;
-    line-height: 1.9em;
-    overflow: hidden;
-    padding: 10px 5px;
-    font-size: 12px;
-    margin-bottom: 10px; /* Espaçamento entre parágrafos */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Sombra mais sutil */
+.text-img-about {
+  display: flex;
+  justify-content: space-between; /* Separa os filhos um para cada lado */
+  padding: 80px;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Fundo semi-transparente para legibilidade */
+  border-radius: 10px;
+  align-items: center; /* Centraliza os itens verticalmente */
+  max-width: 60%;
 }
 
+.text-img-one {
+  padding: 10px; /* Padding para não deixar o texto colado */
+  margin: 0 10px; /* Margem entre os textos */
+  text-align: center;
+  width: 50%;
+}
+
+.text-img-one p {
+  background-color: #252627;
+  color: #faffeb;
+  display: inline-block;
+  line-height: 1.9em;
+  overflow: hidden;
+  padding: 10px 5px;
+  font-size: 12px;
+  margin-bottom: 10px; /* Espaçamento entre parágrafos */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Sombra mais sutil */
+}
 
 .text-img-one h3 {
-    background-color: #252627;
-    display: inline-block;
-    font-family: 'Roboto Bold';
-    color: white;
-    font-size: 16px;
-    margin: 0;
-    font-size: 19px;
-    
+  background-color: #252627;
+  display: inline-block;
+  font-family: "Roboto Bold";
+  color: white;
+  font-size: 16px;
+  margin: 0;
+  font-size: 19px;
 }
 
-
 .text-img-two h3 {
-    font-family: 'Roboto Bold';
-    font-size: 19px;
-    background-color: #252627;
-    display: inline-block;
-    color: white;
-    margin: 0;
-    
+  font-family: "Roboto Bold";
+  font-size: 19px;
+  background-color: #252627;
+  display: inline-block;
+  color: white;
+  margin: 0;
 }
 
 .text-img-two {
-    padding: 10px;
-    text-align: center;
-    width: 50%;
+  padding: 10px;
+  text-align: center;
+  width: 50%;
 }
 
 .text-img-two p {
-    background-color: #252627;
-    color: white;
-    display: inline-block;
-    line-height: 1.9em;
-    padding: 2px 5px;
-    
-    font-size: 12px;
-    margin-bottom: 10px; /* Espaçamento entre parágrafos */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  background-color: #252627;
+  color: white;
+  display: inline-block;
+  line-height: 1.9em;
+  padding: 2px 5px;
+
+  font-size: 12px;
+  margin-bottom: 10px; /* Espaçamento entre parágrafos */
 }
 
+.vision,
+.mission,
+.values,
+.goals {
+  width: 45%; /* Tamanho padrão para telas grandes */
+  padding: 20px;
+  margin: 10px;
+  background-color: #252627b2; /* Fundo semi-transparente */
+  border-radius: 10px;
+  transition: all 0.3s ease; /* Adiciona transição para suavizar o hover */
+}
 
-@media screen and (max-width: 1140px){
-  
+/* Estilo para o hover */
+.vision:hover,
+.mission:hover,
+.values:hover,
+.goals:hover {
+  background-color: #000000; /* Fundo preto escuro */
+  color: #ffffff; /* Texto branco */
+  transition: all 0.3s ease; /* Suaviza a transição */
+}
+
+/* Garante que os textos internos também mudem para branco */
+.vision:hover h4,
+.vision:hover p,
+.mission:hover h4,
+.mission:hover p,
+.values:hover h4,
+.values:hover p,
+.goals:hover h4,
+.goals:hover p {
+  color: #ffffff; /* Texto branco */
+}
+
+@media screen and (max-width: 1140px) {
   .about-img {
     flex-direction: column; /* Organização vertical em telas pequenas */
-}
+  }
 
-.vision, .mission, .values, .goals {
+  .vision,
+  .mission,
+  .values,
+  .goals {
     width: 80%; /* Aumenta a largura em telas pequenas */
     margin: 10px auto; /* Centraliza horizontalmente */
-}
+  }
 }
